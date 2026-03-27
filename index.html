@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        button{
+           
+            cursor: pointer;
+        }
+        table{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containInputs" style="display: flex; flex-direction: column; align-items: start; gap: 20px;">
+    <div>Id: <input id="valId" type="text" disabled></div>
+   <div> UserName: <input type="text" id="valUserName" placeholder="Nhập tên"></div>
+   <div> Avatar: <input type="file" id="valFile" style="cursor: pointer;"/>
+    <img src="" id="preViewImage">
+</div>
+<div>Salary: 
+    <input type="number" id="valSalary" placeholder="Nhập số">
+</div>
+<div>
+    Des:
+    <textarea name="text" id="valDes"></textarea>
+</div>
+<div>
+    Gender:
+    <input type="radio" name="gender" value="Male" style="cursor: pointer;"/> Male
+    <input type="radio" name="gender" value="Female" style="cursor: pointer;"/> Female
+</div>
+<div>
+    Married:
+    <input type="checkbox" id="isMarried" style="cursor: pointer;" />
+</div>
+<div>
+    Ducation: 
+    <select  id="select" style="cursor: pointer;">
+        <option value="">Choose select options</option>
+        <option value="1">1 Năm</option>
+        <option value="2">2 năm</option>
+        <option value="3">3 năm</option>
+        <option value="4">4 năm</option>
+    </select>
+</div>
+ 
+
+<div class="containbuttons" style="display: flex; gap: 10px; ">
+    <button type="submit" id="btn" style="cursor: pointer;">Thêm</button>
+<button type="submit" id="btndelete" style="cursor: pointer; display: none;">Xóa</button>
+</div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    All <input type="checkbox" id="all">
+                </th>
+                <th>
+                    ID
+                </th>
+                <th>
+                    User Name
+                </th>
+                <th>Avatar</th>
+                <th>Des</th>
+                <th>Salary</th>
+                <th>Gender</th>
+                <th>Married</th>
+                <th>Ducation</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
