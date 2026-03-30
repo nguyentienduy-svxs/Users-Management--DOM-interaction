@@ -28,6 +28,114 @@
         table{
             margin-top: 20px;
         }
+        body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container form */
+.containInputs {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    width: 400px;
+}
+
+/* Input, textarea, select */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4a90e2;
+}
+
+/* File input */
+input[type="file"] {
+    border: none;
+}
+
+/* Image preview */
+#preViewImage {
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #4a90e2;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+#btndelete {
+    background: #e74c3c;
+}
+
+#btndelete:hover {
+    background: #c0392b;
+}
+
+/* Table */
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+th {
+    background: #4a90e2;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f1f7ff;
+}
+
+/* Checkbox cursor */
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
+/* Action buttons in table */
+td button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
     </style>
 </head>
 <body>
